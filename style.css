@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Kumbh Sans";
+    src: url("https://fonts.google.com/specimen/Kumbh+Sans") format("ttf"),
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
