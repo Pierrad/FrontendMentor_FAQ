@@ -3,7 +3,89 @@
     src: url("https://fonts.google.com/specimen/Kumbh+Sans") format("ttf"),
 }
 
+html, body {
+    height: 100%;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 980px;
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    filter: drop-shadow(3rem 3rem 3rem rgba(0, 0, 0, 0.08));
+    border-radius: 2rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+
+.boxImage {
+    margin: 0 5rem 0 -7rem;
+    position: relative;
+}
+
+#womanImagePattern {
+    position: absolute;
+    width: 200%;
+    top: -86%;
+    left: -103%;
+    z-index: -1;
+}
+
+#womanImageBox {
+    position: absolute;
+    z-index: 1;
+    left: -9.5%;
+    top: 36%;
+}
+
+#womanImage {
+
+}
+
+.boxText {
+    margin-bottom: 6rem;
+}
+
+h1 {
+    font-family: "Kumbh Sans", serif;
+}
+
+p {
+    font-family: "Kumbh Sans", serif;
+    font-size: 1rem;
+    color: hsl(240, 6%, 50%);
+}
+
+.question {
+    border-bottom: 0.1rem solid hsl(240, 5%, 91%);
+}
+
+.question:hover > p {
+    color: hsl(14, 88%, 65%);
+}
+
+.response {
+    display: none;
+}
+
+
 .attribution {
+    position: fixed;
+    bottom: 0%;
     font-size: 11px;
     text-align: center;
 }
