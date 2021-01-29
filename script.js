@@ -1,11 +1,17 @@
 // Make changes when resizing page
 window.onresize = function() {
+    let womanImage = document.getElementById("womanImage");
+    let backgroundPattern = document.getElementById("backgroundPattern");
     if(window.screen.width <= 375) {
-        let womanImage = document.getElementById("womanImage");
+        // Change Woman image
         womanImage.src = "./images/illustration-woman-online-mobile.svg";
+        // Change background pattern
+        backgroundPattern.src = './images/bg-pattern-mobile.svg'
     }else {
-        let womanImage = document.getElementById("womanImage");
+        // Change Woman image
         womanImage.src = "./images/illustration-woman-online-desktop.svg";
+        // Change background pattern
+        backgroundPattern.src = './images/bg-pattern-desktop.svg'
     }
 };
 

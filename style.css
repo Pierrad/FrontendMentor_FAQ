@@ -44,7 +44,7 @@ html, body {
     padding-right: 30rem;
 }
 
-#womanImagePattern {
+#backgroundPattern {
     position: absolute;
     width: 200%;
     top: -76%;
@@ -128,4 +128,55 @@ p {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    
+    #womanImageBox {
+        position: absolute;
+        z-index: 1;
+        left: 13.5%;
+        top: -7%;
+        width: 25%;
+    }
+
+    .card {
+        flex-direction: column;
+        max-height: 33rem;
+        padding: 1.5rem;
+        overflow: visible;
+    }
+
+    .boxImage {
+        padding-bottom: 3rem;
+    }
+
+    #backgroundPattern {
+        position: absolute;
+        width: 50%;
+        top: -365%;
+        left: 6%;
+        z-index: -1;
+    }
+    
+    #womanImage {
+        position: absolute;
+        top: -288%;
+        left: 6%;
+        width: 50%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .question > p {
+        margin-right: 2rem;
+    }
+
+    
 }
