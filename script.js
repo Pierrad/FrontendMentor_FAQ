@@ -2,7 +2,7 @@
 window.onresize = function() {
     let womanImage = document.getElementById("womanImage");
     let backgroundPattern = document.getElementById("backgroundPattern");
-    if(window.screen.width <= 375) {
+    if(window.screen.width <= 400) {
         // Change Woman image
         womanImage.src = "./images/illustration-woman-online-mobile.svg";
         // Change background pattern

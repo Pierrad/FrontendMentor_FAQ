@@ -133,11 +133,7 @@ p {
 @media (max-width: 375px) {
     
     #womanImageBox {
-        position: absolute;
-        z-index: 1;
-        left: 13.5%;
-        top: -7%;
-        width: 25%;
+        display: none;
     }
 
     .card {
@@ -161,8 +157,8 @@ p {
     
     #womanImage {
         position: absolute;
-        top: -288%;
-        left: 6%;
+        top: -265%;
+        left: 4%;
         width: 50%;
     }
 
