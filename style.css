@@ -21,6 +21,13 @@ html, body {
     position: relative;
 }
 
+#womanImageBox {
+    position: absolute;
+    z-index: 1;
+    left: -9.5%;
+    top: 38%;
+}
+
 .card {
     display: flex;
     flex-direction: row;
@@ -29,35 +36,33 @@ html, body {
     border-radius: 2rem;
     padding: 2rem;
     overflow: hidden;
+    max-height: 28rem;
 }
 
-
 .boxImage {
-    margin: 0 5rem 0 -7rem;
     position: relative;
+    padding-right: 30rem;
 }
 
 #womanImagePattern {
     position: absolute;
     width: 200%;
-    top: -86%;
-    left: -103%;
+    top: -76%;
+    left: -128%;
     z-index: -1;
 }
 
-#womanImageBox {
-    position: absolute;
-    z-index: 1;
-    left: -9.5%;
-    top: 36%;
-}
-
 #womanImage {
-
+    position:absolute;
+    top: 5%;
+    left: -23%;
 }
 
 .boxText {
-    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    max-width: 25rem;
 }
 
 h1 {
@@ -72,16 +77,48 @@ p {
 
 .question {
     border-bottom: 0.1rem solid hsl(240, 5%, 91%);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.question > p {
+    display: inline;
+    margin-right: 3rem;
+}
+
+.showBold {
+    font-weight: bold;
+    color: black;
 }
 
 .question:hover > p {
     color: hsl(14, 88%, 65%);
 }
 
-.response {
-    display: none;
+#arrowIcon {
+    float: right;
+    margin-top: 0.4rem;
 }
 
+.showArrow {
+    transition: transform .3s;
+    transform: rotate(180deg);
+}
+
+.response {
+    max-height: 0rem;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.showDiv {
+    max-height: 10rem;
+    animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
 
 .attribution {
     position: fixed;
